@@ -71,20 +71,14 @@ git clone https://github.com/konnikamii/react-task-app.git .
 ```
 
 ## Frontend Setup
-
-#### 1. Navigate to the frontend directory:
-
-```bash
-cd frontend
-```
-
-#### 2. Copy the example environment file and configure it:
+  
+#### 1. Copy the example environment file and configure it:
 
 ```bash
 cp .env.example .env
 ```
 
-#### 3. Make new directories for the named volumes:
+#### 2. Make new directories for the named volumes:
 
 ```bash
 mkdir node_modules
@@ -93,13 +87,13 @@ mkdir dist
 mkdir dist-server
 ```
 
-#### 4. Install Node.js dependencies using npm: (only if running locally)
+#### 3. Install Node.js dependencies using npm: (only if running locally)
 
 ```bash
 npm install
 ```
 
-#### 5. Start the Vite development server: (only if running locally)
+#### 4. Start the Vite development server: (only if running locally)
 
 ```bash
 npm run dev

@@ -128,16 +128,6 @@ function Login() {
             Logins
           </div>
           <div className="flex flex-col gap-3 mb-6">
-            <button
-              className={btnClassPrimaryDarkBlue + " w-fit self-end"}
-              onClick={(e) => {
-                rippleAnimation(e, isLight, 700);
-                setValues({ username: "konnik", password: "asd" });
-                setErrors(defaultErrors);
-              }}
-            >
-              Demo
-            </button>
             <div className="relative size-full">
               <div
                 className={`font-semibold mb-2 ${dims.plus1440 ? "text-lg" : "text-base"}`}
