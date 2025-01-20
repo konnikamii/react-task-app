@@ -1,0 +1,20 @@
+name: ${APP_NAME}-prod
+
+services: 
+  frontend:
+    image: ${APP_NAME}-frontend-prod:latest
+    container_name: frontend-prod
+    restart: unless-stopped 
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports: 
+      - 7000:7000 
+    env_file: 
+      - .env
+    environment:
+     - RUN_ON_DOCKER=on
+     - BACKEND_HOST=backend
+     - VITE_MODE=production
+ 
